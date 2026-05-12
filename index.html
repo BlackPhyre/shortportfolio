@@ -197,20 +197,17 @@ a { color: var(--blue); text-decoration: none; }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   display: flex;
-  overflow-x: auto;
-  scrollbar-width: none;
   gap: 0;
   width: 100%;
 }
 
 .main-nav-inner {
   display: flex;
+  flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 32px;
   width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
 }
 
 .main-nav-inner::-webkit-scrollbar { display: none; }
@@ -225,7 +222,6 @@ a { color: var(--blue); text-decoration: none; }
   border: none;
   border-bottom: 2px solid transparent;
   cursor: pointer;
-  white-space: nowrap;
   transition: color 0.2s, border-color 0.2s;
   letter-spacing: 0.02em;
 }
@@ -622,11 +618,11 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   <div class="hero-stats">
     <div class="hero-stat-row">
       <div class="hero-stat"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Years of experience</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">700+</div><div class="hero-stat-label">Pieces written across all formats</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">700+</div><div class="hero-stat-label">Pieces written</div></div>
     </div>
     <div class="hero-stat-wide">
-      <div class="hero-stat-wide-title">B2C &amp; B2B Copywriting</div>
-      <div class="hero-stat-wide-sub">iGaming · Crypto · Fintech · Travel Tech · Gaming · Fitness · DIY · Gardening · Finance</div>
+      <div class="hero-stat-wide-title">Hundreds of brands. Thousands of pieces.</div>
+      <div class="hero-stat-wide-sub">iGaming · Crypto · Fintech · Travel Tech · Gaming · Fitness · DIY · Gardening · Finance · etc.</div>
     </div>
   </div>
 </div>
@@ -634,9 +630,11 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 
 <!-- ═══════ INTRO NOTE ═══════ -->
 <div class="intro-note-wrap">
-  <div class="intro-note">
-    <span class="intro-note-label">A note</span>
-    Hello, I've put together this portfolio specifically for this application. Most of what's here is published. A few pieces are fictional samples to show range across niches I can't fully cover here. I've marked them. Thank you for the time, read on c:
+  <div class="container">
+    <div class="author-note" style="margin: 22px 0;">
+      <span class="author-note-label">A note</span>
+      Hello, I've put together this portfolio specifically for this application. Most of what's here is published. A few pieces are fictional samples to show range across niches I can't fully cover here. I've marked them. Thank you for the time, read on c:
+    </div>
   </div>
 </div>
 
@@ -662,9 +660,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 <div class="container">
 
   <div class="sec-header">
-    <div class="sec-label">Promotional Copy</div>
-    <div class="sec-title">Emails &amp; SMS</div>
-    <p class="sec-desc">Player-facing promotional emails and SMS written for a .com casino and sportsbook brand.</p>
+    <div class="sec-title">Emails &amp; SMS
+    <p class="sec-desc">Some examples of emails I've had to write for CRM communications. These are but a few template-like examples.</p></div>
   </div>
 
   <!-- UCL EMAIL -->
@@ -673,17 +670,15 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <div>
         <div class="sample-title">Champions League Free Bet Email + SMS</div>
         <div class="sample-meta">
-          <span class="tag tag-igaming">iGaming</span>
-          <span class="tag tag-plain">Sportsbook Email</span>
           <span class="read-time">~ 1 min read</span>
         </div>
       </div>
     </div>
     <div class="sample-body">
       <span class="sample-label">Subject Lines</span>
-      <p class="sample-sl">SL1: Champions League is back — grab your Free Bet &nbsp;|&nbsp; SL2: PSG vs Liverpool. Real Madrid vs Bayern. Your move.</p>
+      <p class="sample-sl">SL1: Champions League is back — grab your Free Bet &nbsp;|&nbsp; SL2: Real Madrid vs Bayern. PSG vs Liverpool. Who wins?</p>
       <span class="sample-label">Header</span>
-      <p>Get a Free Bet on the Champions League Quarter-Finals. Code [CODE]</p>
+      <p>Get a Free Bet on the Champions League Quarter-Finals</p>
       <span class="sample-label">Body</span>
       <p>Hey %%first_name%%,</p>
       <p>Eight teams left. Four spots in the semis. The Champions League Quarter-Finals kick off this week and every match has something on the line. Back your pick with a Free Bet.</p>
@@ -704,9 +699,6 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <div>
         <div class="sample-title">Wednesday Reload Bonus Email</div>
         <div class="sample-meta">
-          <span class="tag tag-igaming">iGaming</span>
-          <span class="tag tag-plain">Casino Email</span>
-          <span class="tag tag-plain">Recurring CRM</span>
           <span class="read-time">~ 1 min read</span>
         </div>
       </div>
@@ -733,8 +725,6 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <div>
         <div class="sample-title">Win Rush — Promo Page Copy</div>
         <div class="sample-meta">
-          <span class="tag tag-igaming">iGaming</span>
-          <span class="tag tag-plain">Promo Page</span>
           <span class="read-time">~ 1 min read</span>
         </div>
       </div>
@@ -751,6 +741,56 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     </div>
   </div>
 
+
+  <!-- JELLY EXPRESS CAMPAIGN -->
+  <div class="sample">
+    <div class="sample-head">
+      <div>
+        <div class="sample-title">Jelly Express Prize Drop — Full Campaign</div>
+        <div class="sample-meta">
+          <span class="read-time">~ 2 min read</span>
+        </div>
+      </div>
+    </div>
+    <div class="sample-body">
+      <span class="sample-label">Lobby Slider A</span>
+      <p>All aboard · £1M in rewards. 100K prizes<br>Next station — sweet prize drops</p>
+      <span class="sample-label">Lobby Slider B</span>
+      <p>Don't miss this train. Sweet stops ahead.<br>£1M in rewards. 100K prizes</p>
+      <div class="sample-divider"></div>
+      <span class="sample-label">Promo Page</span>
+      <p>Next stop: Prize Drops — every spin could be a winning ride.</p>
+      <p>Up to £1M in rewards. 100K prizes.</p>
+      <p>Spin Pragmatic Play's Jelly Express from 6 to 12 April. Every real-money spin is your chance to land a real prize.</p>
+      <p>Win up to 10,000× your bet and unlock sweet rewards like 10 or 20 Free Spins. One spin. Up to £10,000 in prizes.</p>
+      <p>All aboard. Tickets checked. Green light for wins!</p>
+      <div class="sample-divider"></div>
+      <span class="sample-label">Subject Lines</span>
+      <p class="sample-sl">SL1: £1M in prizes in the Jelly Express promo &nbsp;|&nbsp; SL2: All aboard? One spin can win you £10,000</p>
+      <span class="sample-label">Email Body</span>
+      <p>Hey %%first_name%%,</p>
+      <p>April's looking sweet with 100K prizes and up to £1M in rewards.</p>
+      <p>From 6 to 12 April, spin Pragmatic Play's Jelly Express for your shot at the Prize Drops.</p>
+      <p>Land cash prizes from 5× to 10,000× your bet in a single spin, plus 10 or 20 Bonus Spins along the way.</p>
+      <p>Your spin is your ticket. Board the Jelly Express.</p>
+      <p><strong>PLAY</strong></p>
+      <p class="tc-line">18+ | BeGambleAware.org | Bet Responsibly | T&amp;Cs Apply</p>
+      <div class="sample-divider"></div>
+      <span class="sample-label">SMS</span>
+      <p>100K prizes in cash and Free Spins. Up to £1M in rewards. Spin Jelly Express by Pragmatic Play for prize drops. T&amp;Cs: {link} | Opt out: {link}</p>
+      <div class="sample-divider"></div>
+      <span class="sample-label">Social Media Post</span>
+      <p>All aboard the Jelly Express 🚂</p>
+      <p>100K prizes. Up to £1M in rewards.</p>
+      <p>🎰 From 6–12 April, spin Pragmatic Play's Jelly Express for your chance to win up to 10,000× your bet or land 10 or 20 Free Spins.</p>
+      <p>The prize train runs on spins. Time to hop on. 🚉</p>
+      <p class="tc-line">18+ | Please play responsibly | BeGambleAware.org | validity 06.04.26–12.04.26 | T&amp;Cs apply</p>
+      <div class="sample-divider"></div>
+      <span class="sample-label">Social Story</span>
+      <p>100K prizes. £1M in rewards.<br>Spin Jelly Express by Pragmatic Play for prize drops.<br>6–12 April</p>
+    </div>
+  </div>
+
 </div>
 </div>
 
@@ -762,8 +802,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 
   <div class="sec-header">
     <div class="sec-label">CRM Journey</div>
-    <div class="sec-title">30-Day Lapsed Player Reactivation</div>
-    <p class="sec-desc">A 4-touchpoint reactivation sequence for players who have not deposited in 30 days. Each message builds on the last, starting soft, escalating the offer, ending with urgency.</p>
+    <div class="sec-title">30-Day Lapsed Player Reactivation
+    <p class="sec-desc">A reactivation sequence for players who went quiet. Four touchpoints, escalating offer, one goal: get them back.</p></div>
   </div>
 
   <div class="journey">
@@ -782,8 +822,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
           <span class="tp-label">Header</span><p>Come Back. We Have a Bonus.</p>
           <span class="tp-label">Body</span>
           <p>Hey %%first_name%%,</p>
-          <p>It has been a while. We noticed you have been away and we want to make your return worth it.</p>
-          <p>Come back today and there is a deposit bonus waiting for you. No complicated steps. Just log in, deposit, and it is yours.</p>
+          <p>It's been quiet without you. Come back today and there's a deposit bonus waiting — easy as it gets.</p>
           <div class="offer-box">[XX]% Deposit Match up to €[XXX]<br>Promo code: [CODE]<br>Min deposit: €[XX]</div>
           <p>The Casino has new games since you last played. Come see what you have missed.</p>
           <p><strong>DEPOSIT NOW</strong></p>
@@ -871,9 +910,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 <div class="container">
 
   <div class="sec-header">
-    <div class="sec-label">B2B Copy</div>
-    <div class="sec-title">LinkedIn Posts</div>
-    <p class="sec-desc">Partnership announcements, event content, and monthly roundups published for a game aggregator and developer brand. Audience: operators, affiliates, and iGaming industry professionals.</p>
+    <div class="sec-title">LinkedIn Posts
+    <p class="sec-desc">Published posts for a brand. Partnerships, events, monthly roundups. B2B audience, warm tone.</p></div>
   </div>
 
   <!-- PARTNERSHIP POSTS -->
@@ -881,7 +919,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     <div class="sample-head">
       <div>
         <div class="sample-title">Partnership Announcements</div>
-        <div class="sample-meta"><span class="tag tag-b2b">B2B</span><span class="tag tag-plain">LinkedIn</span><span class="read-time">~ 1 min read each</span></div>
+        <div class="sample-meta"><span class="read-time">~ 1 min read each</span></div>
       </div>
     </div>
     <div class="sample-body">
@@ -912,7 +950,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     <div class="sample-head">
       <div>
         <div class="sample-title">Event Posts &amp; Recaps</div>
-        <div class="sample-meta"><span class="tag tag-b2b">B2B</span><span class="tag tag-plain">LinkedIn</span><span class="read-time">~ 1 min read each</span></div>
+        <div class="sample-meta"><span class="read-time">~ 1 min read each</span></div>
       </div>
     </div>
     <div class="sample-body">
@@ -929,7 +967,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
         <div class="sample-divider"></div>
         <span class="sample-label">SBC Rio Recap</span>
         <p>The SBC Summit Rio 2026 was amazing!</p>
-        <p>We met fantastic partners, picked up a few new samba moves, and had great conversations with local market experts. Definitely caught the samba fever. 🪇</p>
+        <p>We met fantastic partners, picked up a few new samba moves, and had great conversations with local market experts. Definitely caught the samba fever.</p>
         <p>Until next time, Rio!</p>
         <div class="sample-divider"></div>
         <span class="sample-label">NEXT São Paulo Teaser</span>
@@ -945,7 +983,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     <div class="sample-head">
       <div>
         <div class="sample-title">Monthly Roundups</div>
-        <div class="sample-meta"><span class="tag tag-b2b">B2B</span><span class="tag tag-plain">LinkedIn</span><span class="read-time">~ 1 min read each</span></div>
+        <div class="sample-meta"><span class="read-time">~ 1 min read each</span></div>
       </div>
     </div>
     <div class="sample-body">
@@ -955,7 +993,31 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <div class="sample-divider"></div>
       <span class="sample-label">March Preview</span>
       <p>Spring is coming early! 🌸</p>
-      <p>March is shaping up to be an exciting month:<br>🎮 A new original game<br>🤝 New partnership<br>🔥 Fresh content added to our aggregator<br>🪇 And we had a blast at SBC Rio 2026!</p>
+      <p>March is shaping up to be an exciting month:<br>🎮 A new original game<br>🤝 New partnership<br>🔥 Fresh content added to our aggregator<br>And we had a blast at SBC Rio 2026!</p>
+    </div>
+  </div>
+
+  <!-- GAME LAUNCH POSTS -->
+  <div class="sample">
+    <div class="sample-head">
+      <div>
+        <div class="sample-title">Game Launch Posts</div>
+        <div class="sample-meta"><span class="read-time">~ 1 min read each</span></div>
+      </div>
+    </div>
+    <div class="sample-body">
+      <span class="sample-label">Paris Touch</span>
+      <p>Bonjour from SpinOro!</p>
+      <p>Say hi to our newest release — Paris Touch! The game is now live, featuring stylish symbols that bring the City of Lights to your screen 🗼✨</p>
+      <p>Explore Paris and enjoy exciting bonus features:<br>
+      🛒 Bonus Buy<br>      🛵 Wild symbols<br>      📸 Free Spins<br>      🚗 Special bonus feature</p>
+      <p>Check out the demo here: {link}</p>
+      <div class="sample-divider"></div>
+      <span class="sample-label">Montezuma's Missions</span>
+      <p>Introducing Montezuma's Missions by SpinOro! 🌵🦅</p>
+      <p>Our very first game with a choose-your-mission feature! Select your quest and join Montezuma on his epic journey unlocking:<br>
+      🎭 Wild Symbols<br>      🐍 Free Spin rounds<br>      👽 Cascading Wins<br>      ⭐ Increasing Multipliers</p>
+      <p>Try the demo: {link}</p>
     </div>
   </div>
 
@@ -969,17 +1031,15 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 <div class="container">
 
   <div class="sec-header">
-    <div class="sec-label">Newsletters</div>
-    <div class="sec-title">Player &amp; Industry Newsletters</div>
-    <p class="sec-desc">Three newsletters across iGaming B2C, crypto fintech, and travel tech. Each written for a distinct audience.</p>
+    <div class="sec-title">Player &amp; Industry Newsletters
+    <p class="sec-desc">Three different audiences, three different voices. iGaming players, crypto users, and travel tech professionals.</p></div>
   </div>
 
   <!-- GOLDEN PLAY NEWSLETTER -->
   <div class="nl-wrap">
     <div class="nl-header">
-      <div class="nl-brand" style="color:var(--amber)">Casino Brand · Monthly Newsletter</div>
       <div class="nl-subject">What's New This Month</div>
-      <div class="nl-meta-row"><span class="tag tag-igaming">iGaming B2C</span><span class="tag tag-plain">Player Newsletter</span><span class="read-time">~ 3 min read</span></div>
+      <div class="nl-meta-row"><span class="read-time">~ 3 min read</span></div>
     </div>
     <div class="nl-body">
       <p>Hey %%first_name%%,</p>
@@ -1007,7 +1067,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       </div>
       <div class="nl-divider"></div>
       <div class="nl-cta"><span class="nl-cta-btn amber">Go to Casino</span></div>
-      <div class="nl-account-cta">Questions about your offers or account? <a href="#">Contact your account manager</a> or visit our <a href="#">Help Centre</a>.</div>
+      <div class="nl-account-cta">Questions about your offers or account? <span style="color:var(--blue)">Contact your account manager</span> or visit our <span style="color:var(--blue)">Help Centre</span>.</div>
     </div>
     <div class="nl-footer">18+ | Play responsibly | Sent to %%email%% | Unsubscribe {link} | T&amp;Cs apply</div>
   </div>
@@ -1015,9 +1075,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   <!-- CRYPTO NEWSLETTER -->
   <div class="nl-wrap">
     <div class="nl-header">
-      <div class="nl-brand" style="color:var(--purple)">Crypto Digest · Monthly Update</div>
       <div class="nl-subject">What's Moving in Crypto Right Now</div>
-      <div class="nl-meta-row"><span class="tag tag-crypto">Crypto</span><span class="tag tag-plain">Fintech Newsletter</span><span class="read-time">~ 3 min read</span></div>
+      <div class="nl-meta-row"><span class="read-time">~ 3 min read</span></div>
     </div>
     <div class="nl-body">
       <p>Your monthly snapshot of what's happening in crypto. The updates that matter and what they mean for your assets.</p>
@@ -1039,7 +1098,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <p>Phishing attacks targeting crypto users went up this month. Always check the URL before connecting your wallet to any site. No real service will ever ask for your seed phrase.</p>
       <div class="nl-divider"></div>
       <div class="nl-cta"><span class="nl-cta-btn" style="background:var(--purple);color:white;">Read Full Digest</span></div>
-      <div class="nl-account-cta">Want to discuss your portfolio or products? <a href="#">Contact your account manager</a> for a personalised review.</div>
+      <div class="nl-account-cta">Want to discuss your portfolio or products? <span style="color:var(--blue)">Contact your account manager</span> for a personalised review.</div>
     </div>
     <div class="nl-footer">For informational purposes only. Not financial advice. Crypto assets are high-risk and volatile. | Unsubscribe {link}</div>
   </div>
@@ -1047,9 +1106,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   <!-- TRAVEL NEWSLETTER -->
   <div class="nl-wrap">
     <div class="nl-header">
-      <div class="nl-brand" style="color:var(--green)">Travel Intelligence · Industry Guide</div>
       <div class="nl-subject">How AI Decides What You Pay for Your Flight</div>
-      <div class="nl-meta-row"><span class="tag tag-tech">Travel Tech</span><span class="tag tag-spec">Spec Sample</span><span class="read-time">~ 4 min read</span></div>
+      <div class="nl-meta-row"><span class="tag tag-spec">Spec Work</span><span class="read-time">~ 4 min read</span></div>
     </div>
     <div class="nl-body">
       <p>You check a flight. Close the tab. Come back an hour later. The price has changed.</p>
@@ -1074,7 +1132,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <p>That's where the industry is heading. AI is what makes it work.</p>
       <div class="nl-divider"></div>
       <div class="nl-cta"><span class="nl-cta-btn" style="background:var(--green);color:white;">Read More</span></div>
-      <div class="nl-account-cta">Want to learn more about how AI pricing affects your routes or network? <a href="#">Speak to our team</a>.</div>
+      <div class="nl-account-cta">Want to learn more about how AI pricing affects your routes or network? <span style="color:var(--blue)">Speak to our team</span>.</div>
     </div>
     <div class="nl-footer">This guide is for informational purposes. Pricing examples are illustrative. | Unsubscribe {link}</div>
   </div>
@@ -1089,48 +1147,75 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 <div class="container">
 
   <div class="sec-header">
-    <div class="sec-label">PR Writing</div>
-    <div class="sec-title">Press Articles</div>
-    <p class="sec-desc">Published B2B press-style articles covering market expansions and new partnerships. Professional tone, structured format, business-first framing.</p>
+    <div class="sec-title">Press Articles
+    <p class="sec-desc">Market expansion announcements published on the company news page. Professional tone, business-first.</p></div>
   </div>
 
   <div class="sample">
     <div class="sample-head">
       <div>
-        <div class="sample-title">Partnership Announcement — Brazilian Market Expansion</div>
-        <div class="sample-meta"><span class="tag tag-b2b">B2B</span><span class="tag tag-plain">PR Article</span><span class="tag tag-plain">Published</span><span class="read-time">~ 2 min read</span></div>
+        <div class="sample-title">SpinOro Partners with Pagol, Strengthening Brazilian Presence</div>
+        <div class="sample-meta"><span class="read-time">~ 3 min read</span></div>
       </div>
     </div>
     <div class="sample-body">
-      <p>We're marking another key step in our expansion across Latin America, through a partnership with one of the most recognised platform providers on the continent.</p>
-      <p>The integration brings a selection of our in-house games into their aggregator platform, distributing them across an extensive network of operator partners in Brazil, one of the fastest-growing regulated markets in the world.</p>
-      <p>Brazil officially regulated its online gambling market at the start of 2025, opening the door for licensed operators to offer a full range of casino and sports betting products to a player base of over 200 million people.</p>
-      <p>For us, this partnership is both a commercial milestone and a signal of where the market is heading. Operators in Brazil are moving quickly to build out their content libraries, and having a trusted local distribution partner accelerates that significantly.</p>
+      <p>SpinOro is happy to announce that its Brazil-certified, high-performing titles are now live with Pagol, a premier operator on the Brazilian market. This collaboration significantly strengthens SpinOro's presence in one of the world's most dynamic gaming regions.</p>
+      <p>The initial launch brings a strong selection of SpinOro's standout titles to Pagol players, including Aladdin's Treasure Megaways, Wild Eagle Spins, Wild Candy, Gem-X, Maneki's Wealth, The Burning Five, Alibaba: Cave of Wonders, Hot Spin Retrigger, Starfruit, and Pyramid Spin.</p>
+      <p>This partnership represents a significant step forward for both sides. By integrating SpinOro's portfolio, Pagol enhances its platform with proven titles designed to drive engagement and retention. At the same time, the deal provides SpinOro with immediate access to Pagol's growing network of players and brands, accelerating its reach across the LATAM region.</p>
       <div class="wp-pull-quote" style="margin:18px 0;">
-        <p>"Brazil is a market we have been watching closely for two years. The regulation created real commercial clarity, and this partnership gives us the right infrastructure to move quickly and serve operators well."</p>
-        <cite>Chief Commercial Officer</cite>
+        <p>"This partnership with SpinOro marks another significant milestone in our strategy to expand and strengthen our portfolio. The provider's games are already integrated into our platform, and we are actively working to introduce this content to our player base."</p>
+        <cite>Antonio Pinho, CBO at Pagol</cite>
       </div>
-      <p>This is one of several partnerships we have established in Latin America over the past twelve months, and we expect the region to remain a key growth priority through 2025 and beyond.</p>
+      <div class="wp-pull-quote" style="margin:18px 0;">
+        <p>"Brazil is a rapidly evolving market with a growing appetite for diverse, high-quality titles. Our goal is to strengthen our position there by delivering engaging content that resonates with local players. Pagol provides the ideal infrastructure for this expansion."</p>
+        <cite>Jeff Letlat, COO at SpinOro</cite>
+      </div>
+      <p>The collaboration connects SpinOro's certified game portfolio with Pagol's established platform reach at a pivotal moment for Brazil's gaming sector. With player demand rising and regulatory frameworks taking shape, both companies are positioning themselves at the forefront of the market's next phase of growth.</p>
     </div>
   </div>
 
   <div class="sample">
     <div class="sample-head">
       <div>
-        <div class="sample-title">Partnership Announcement — Peru Market Entry</div>
-        <div class="sample-meta"><span class="tag tag-b2b">B2B</span><span class="tag tag-plain">PR Article</span><span class="tag tag-plain">Published</span><span class="read-time">~ 2 min read</span></div>
+        <div class="sample-title">SpinOro Partners with Novusbet to Expand Its Reach in Peru</div>
+        <div class="sample-meta"><span class="read-time">~ 3 min read</span></div>
       </div>
     </div>
     <div class="sample-body">
-      <p>We are excited to announce a new partnership that marks our entry into the Peruvian market, one of the most dynamic and rapidly growing gaming jurisdictions in Latin America.</p>
-      <p>Through this partnership, our full game portfolio will be made available to players in Peru. This includes our flagship original titles alongside a broad selection of content from our aggregator network, giving local operators immediate access to a competitive and diverse library.</p>
+      <p>SpinOro is excited to announce a new partnership with Novusbet, one of the leading sportsbook and casino providers in Peru. This collaboration marks another big move in SpinOro's scaling up within the Peruvian market.</p>
+      <p>Through this partnership, some of SpinOro's most popular, Peru-certified titles are now available across Novusbet's casino network, including Hot Spin Retrigger, Maneki's Wealth, Pyramid Spin, Starfruit, The Burning Five, Wild Candy, and Wild Eagle Spins.</p>
+      <p>While SpinOro has already made notable progress across LATAM, teaming up with Novusbet enables the company to engage more deeply with a localised audience. Novusbet's strong reputation in the market makes it the ideal partner to bring SpinOro's certified games to new Peruvian players.</p>
       <div class="wp-pull-quote" style="margin:18px 0;">
-        <p>"Peru is a well-structured market with engaged players and operators who are serious about content quality. We are entering at exactly the right moment."</p>
-        <cite>VP of Partnerships, Latin America</cite>
+        <p>"By combining Novusbet's local expertise with our certified games like Wild Candy and Maneki's Wealth, we can reach more players and offer them the titles they actually want to play."</p>
+        <cite>Kristin Ilieva, Business Development Manager at SpinOro</cite>
       </div>
-      <p>Peru represents a significant opportunity. The market is well-regulated, the player base is engaged, and operators are actively seeking high-quality content partners to differentiate their platforms.</p>
-      <p>This move aligns with our broader Latin America strategy. Over the past year, we have built a strong presence across Brazil, Colombia, and Mexico. Peru strengthens that footprint and opens new commercial pathways with partners already operating across the region.</p>
-      <p>We look forward to growing this partnership and delivering real value to Peruvian players and operators alike.</p>
+      <div class="wp-pull-quote" style="margin:18px 0;">
+        <p>"Peru is a sophisticated market. Our goal isn't just to be present, but to provide the content that Peruvian players are actually asking for. Novusbet gives us the perfect platform to do that."</p>
+        <cite>Jeff Letlat, COO at SpinOro</cite>
+      </div>
+      <p>This partnership marks a significant step for SpinOro in LATAM. By teaming up with Novusbet, SpinOro is bringing its certified games to even more players across Peru.</p>
+    </div>
+  </div>
+
+  <div class="sample">
+    <div class="sample-head">
+      <div>
+        <div class="sample-title">SpinOro Teams Up with Bragg to Expand in Major Global Markets</div>
+        <div class="sample-meta"><span class="read-time">~ 2 min read</span></div>
+      </div>
+    </div>
+    <div class="sample-body">
+      <p>SpinOro has entered a strategic partnership with Bragg Gaming Group to accelerate its global expansion through their aggregator. Bragg HUB now features SpinOro's full content portfolio, including over 240 in-house titles across online slots, scratch, crash, and table games.</p>
+      <p>Bragg's aggregator powers top operators in Serbia, covering a significant share of the market there, and some of the biggest in the Netherlands via its single-API integration. This deal taps Bragg's strong international presence to bring SpinOro games further into major markets.</p>
+      <div class="wp-pull-quote" style="margin:18px 0;">
+        <p>"SpinOro brings fresh energy to Bragg HUB with their innovative crash games and slots. This partnership positions us perfectly to capture growing demand across key European markets, delivering content that keeps players coming back."</p>
+        <cite>Hristofor Hristov, Director of Aggregation at Bragg Gaming Group</cite>
+      </div>
+      <div class="wp-pull-quote" style="margin:18px 0;">
+        <p>"Partnering with Bragg Gaming Group speeds up our global expansion. Their operator network and experience mean our games will reach the right players and drive real results."</p>
+        <cite>Jeff Letlat, COO at SpinOro</cite>
+      </div>
+      <p>With this partnership, SpinOro's push into international markets accelerates, reaching leading operators across the Bragg HUB network.</p>
     </div>
   </div>
 
@@ -1144,9 +1229,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 <div class="container">
 
   <div class="sec-header">
-    <div class="sec-label">Blog</div>
-    <div class="sec-title">Industry Blog Posts</div>
-    <p class="sec-desc">Two blog posts written for airline and fintech commercial audiences.</p>
+    <div class="sec-title">Blog Posts</div>
+    <p class="sec-desc">Two thought leadership pieces written as spec samples for travel tech and fintech audiences. Industry-level arguments for commercial readers.</p></div>
   </div>
 
   <!-- PROS BLOG -->
@@ -1154,7 +1238,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     <div class="sample-head">
       <div>
         <div class="sample-title">Why Airlines That Wait on Continuous Pricing Will Pay for It Twice</div>
-        <div class="sample-meta"><span class="tag tag-tech">Travel Tech</span><span class="tag tag-spec">Spec Sample</span><span class="read-time">~ 8 min read</span></div>
+        <div class="sample-meta"><span class="tag tag-spec">Spec Work</span><span class="read-time">~ 8 min read</span></div>
       </div>
     </div>
     <div class="sample-body article">
@@ -1169,7 +1253,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <div class="photo-placeholder"><span class="photo-placeholder-label">Featured Image</span></div>
 
       <div class="key-takeaways">
-        <span class="kt-label">Key Takeaways</span>
+        
         <ul class="kt-list">
           <li>Delaying continuous pricing carries a compounding revenue cost on every booking cycle.</li>
           <li>Class-based fare structures create artificial price gaps that demand does not follow.</li>
@@ -1221,7 +1305,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 
       <p>Airlines that frame this as all-or-nothing tend to delay indefinitely. Airlines that treat it as a modular capability built incrementally tend to have measurable results within months.</p>
 
-      <div class="related"><span class="related-icon">→</span><div><span class="related-label">Related Reading</span><span class="related-title">How Airlines Can Adopt Continuous Pricing. Integration guide covering modular deployment within existing PSS environments.</span></div></div>
+      <div class="related"><span class="related-icon">→</span><div><span class="related-title" style="color:var(--blue)">From Class-Based to Continuous: A Practical Guide for Airline Commercial Teams</span></div></div>
 
       <h2>The Competitive Asymmetry That Builds Over Time</h2>
       <p>Continuous pricing systems improve as they process more data. Demand elasticity models become more accurate. Booking curve patterns for specific routes and seasons are learned and refined.</p>
@@ -1236,7 +1320,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <p>Continuous pricing is not the end state of airline retail transformation. It is the foundation that makes everything above it possible: offer optimisation, dynamic ancillary pricing, personalised bundles at the moment of request.</p>
       <p>Delay does not buy time. It narrows the window.</p>
 
-      <div class="related"><span class="related-icon">→</span><div><span class="related-label">Related Reading</span><span class="related-title">Stop Selling Seats. Start Making Offers. Why the offer is now the primary commercial product in modern airline retailing.</span></div></div>
+      <div class="related"><span class="related-icon">→</span><div><span class="related-title" style="color:var(--blue)">The Offer Is the Product: How Airlines Are Rethinking What They Sell</span></div></div>
 
       <div class="faq-section">
         <div class="faq-title">FAQ</div>
@@ -1248,12 +1332,98 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     </div>
   </div>
 
+
+  <!-- CRYPTO GUIDE -->
+  <div class="sample">
+    <div class="sample-head">
+      <div>
+        <div class="sample-title">How to Buy Crypto With a Credit Card</div>
+        <div class="sample-meta">
+          <span class="read-time">~ 10 min read</span>
+        </div>
+      </div>
+    </div>
+    <div class="sample-body article">
+
+      <div class="photo-placeholder"><span class="photo-placeholder-label">Featured Image</span></div>
+
+      <div class="key-takeaways">
+        <ul class="kt-list">
+          <li>Credit cards are one of the fastest ways to buy crypto — most major exchanges accept Visa and Mastercard instantly.</li>
+          <li>Some card issuers treat crypto purchases as cash advances, adding 3–5% in extra fees. Always check first.</li>
+          <li>The process takes minutes: register, verify, buy, transfer to your casino wallet.</li>
+          <li>Stick to reputable exchanges like Coinbase, Binance, or Kraken for the best balance of fees and security.</li>
+          <li>Public Wi-Fi, weak passwords, and skipping 2FA are the most common ways players get burned.</li>
+        </ul>
+      </div>
+
+      <h2>What You Need to Know Before You Start</h2>
+      <p>Crypto casinos look and feel like traditional gambling sites. Behind the scenes, the way money moves is completely different. Instead of fiat currencies, they run on digital assets and decentralised networks — which means faster payments, more privacy, and no bank in the middle.</p>
+      <p>Three terms worth knowing before you deposit:</p>
+      <ul style="list-style:none;padding:0;margin:10px 0 16px;border-top:1px solid var(--border);">
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Cryptocurrency</strong> — digital money secured through encryption. No banks. Peer-to-peer networks handle everything.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Crypto casino</strong> — an online gambling site that accepts crypto for deposits, bets, and withdrawals. Usually faster and more private than traditional casinos.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Blockchain</strong> — a public ledger that records every transaction in linked blocks. Every action is traceable and tamper-proof.</li>
+      </ul>
+
+      <h2>Why People Use Credit Cards for Crypto</h2>
+      <p>Credit cards are familiar, widely accepted, and fast. Most major exchanges support Visa and Mastercard. You enter your card details, pick your coin, confirm the payment — usually done in minutes.</p>
+      <p>The downside: you are borrowing money to buy a volatile asset. If the value drops while you carry a balance, it costs you. For casual players and short-term buys the convenience usually wins, but go in with clear limits.</p>
+      <p>When credit cards work well for crypto:</p>
+      <ul style="list-style:none;padding:0;margin:10px 0 16px;border-top:1px solid var(--border);">
+        <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13.5px;">⚡ Speed — instant purchases without bank transfer delays</li>
+        <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13.5px;">🔒 Security — built-in fraud protection and chargeback options</li>
+        <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13.5px;">📋 Records — easy to track in your card statement</li>
+        <li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13.5px;">🎁 Rewards — some cards offer points or cashback on purchases</li>
+      </ul>
+
+      <h2>Step-by-Step: How to Buy Crypto at a Casino Site</h2>
+      <p><strong>1. Register on the casino.</strong> Name, email, date of birth, address. Standard stuff for verification and legal compliance.</p>
+      <p><strong>2. Add your card.</strong> Card number, expiry, CVV, sometimes billing address. Some sites run a small refundable charge to verify.</p>
+      <p><strong>3. Buy your crypto.</strong> Bitcoin and Ethereum are the most widely accepted. Enter the amount, check the rate and fees, confirm.</p>
+      <p><strong>4. Transfer to your wallet.</strong> Either buy directly on the platform or purchase elsewhere and send it to your player wallet. Copy the receiving address carefully — crypto transfers are irreversible.</p>
+      <p>Most casinos support instant transfers on major networks like BTC and ETH. Once it hits your account, you are ready to play.</p>
+
+      <h2>Fees to Expect</h2>
+      <p>The advertised price is rarely the final price. Here is what gets added:</p>
+      <ul style="list-style:none;padding:0;margin:10px 0 16px;border-top:1px solid var(--border);">
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Transaction fee:</strong> 1% to 3%, charged by the exchange or payment processor.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Cash advance fee:</strong> 3% to 5% extra if your card issuer treats crypto as a cash advance. Check before you buy.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Network fee:</strong> Paid to blockchain validators. Varies by network congestion.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><strong>Foreign transaction fee:</strong> 1% to 3% if the site processes through an international bank.</li>
+      </ul>
+
+      <h2>5 Tips for Buying Safely</h2>
+      <ul style="list-style:none;padding:0;margin:10px 0 16px;border-top:1px solid var(--border);">
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-right:8px;">Tip 01</span><strong>Use a card with fraud protection.</strong> Zero liability policies and real-time alerts are your first line of defence.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-right:8px;">Tip 02</span><strong>Turn on purchase notifications.</strong> Every transaction flagged the moment it happens.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-right:8px;">Tip 03</span><strong>Stay off public Wi-Fi.</strong> Use your home network or a trusted VPN when making purchases.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-right:8px;">Tip 04</span><strong>Check the URL.</strong> HTTPS and a padlock. If either is missing, close the tab.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-right:8px;">Tip 05</span><strong>Use 2FA everywhere.</strong> Strong passwords plus two-factor authentication on every account.</li>
+      </ul>
+
+      <h2>Best Sites to Buy Crypto With a Card</h2>
+      <ul style="list-style:none;padding:0;margin:10px 0 16px;border-top:1px solid var(--border);">
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="color:var(--blue);font-weight:500;">Coinbase</span> — best for beginners. Clean interface, wide coin selection. Fees up to 3.99%.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="color:var(--blue);font-weight:500;">Binance</span> — largest exchange by volume. Around 2% for card purchases. More tools for experienced users.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="color:var(--blue);font-weight:500;">Kraken</span> — strong on security and transparency. 3.75% plus a flat €0.25 fee per card transaction.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="color:var(--blue);font-weight:500;">Bitstamp</span> — one of the oldest exchanges still running. Flat 5% fee. Slower but reliable.</li>
+        <li style="padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;"><span style="color:var(--blue);font-weight:500;">Crypto.com</span> — mobile-first, built-in wallet, Visa debit card option. Up to 2.99% for card purchases.</li>
+      </ul>
+
+      <h2>How to Choose the Right Platform</h2>
+      <p>Compare the full cost, not just the headline fee. Know your limits — some platforms cap purchases until you complete higher verification levels. Check how fast they process card buys, and make sure you can actually move your crypto out without delays or restrictions.</p>
+      <p>And read the reviews. Not the five-star ones on the platform's own site. The ones on forums where people complain. If they ignore complaints now, they will ignore yours later too.</p>
+
+    </div>
+  </div>
+
   <!-- NEXO BLOG -->
   <div class="sample">
     <div class="sample-head">
       <div>
         <div class="sample-title">Why Most Crypto Platforms Still Price Like It Is 2018</div>
-        <div class="sample-meta"><span class="tag tag-crypto">Crypto</span><span class="tag tag-spec">Spec Sample</span><span class="read-time">~ 8 min read</span></div>
+        <div class="sample-meta"><span class="tag tag-spec">Spec Work</span><span class="read-time">~ 8 min read</span></div>
       </div>
     </div>
     <div class="sample-body article">
@@ -1268,7 +1438,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <div class="photo-placeholder"><span class="photo-placeholder-label">Featured Image</span></div>
 
       <div class="key-takeaways">
-        <span class="kt-label">Key Takeaways</span>
+        
         <ul class="kt-list">
           <li>Flat-rate yield and lending models were designed for an early-stage acquisition market. That market no longer defines the landscape.</li>
           <li>User behaviour, collateral quality, and market conditions vary enough to justify dynamic, differentiated rate structures.</li>
@@ -1319,7 +1489,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
         <p>The technical infrastructure exists at most mature platforms. Risk scoring, on-chain data, transaction history, and market feeds can all feed a rate model. What most platforms have not built is the commercial logic that translates those inputs into differentiated rates at scale. That is a product decision, not an infrastructure one.</p>
       </div>
 
-      <div class="related related-purple"><span class="related-icon">→</span><div><span class="related-label">Related Reading</span><span class="related-title">How Ethereum Layer 2 Growth Is Changing On-Chain Lending Economics. What rising transaction volumes mean for collateral risk and rate management.</span></div></div>
+      <div class="related related-purple"><span class="related-icon">→</span><div><span class="related-title" style="color:var(--blue)">Layer 2 and Lending: What Rising On-Chain Volume Means for Collateral Risk</span></div></div>
 
       <h2>The Retention Argument</h2>
       <p>Beyond margin, dynamic rate structures produce a retention effect that static models cannot replicate.</p>
@@ -1345,6 +1515,9 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   </div>
 
 
+
+
+
 </div>
 </div>
 
@@ -1357,11 +1530,17 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   <div class="sec-header">
     <div class="sec-label">Long-Form</div>
     <div class="sec-title">Whitepaper</div>
-    <p class="sec-desc">A full-length whitepaper written for business leaders and operations teams. Eight sections covering AI-driven cost optimisation from first principles through to implementation.</p>
+    <div style="margin:6px 0 8px"><span class="tag tag-spec">Spec Work</span></div>
+    <p class="sec-desc">A spec sample written for business leaders and ops teams. Eight sections on AI cost optimisation, plain guide, no jargon.</p>
+  </div>
+
+  <div class="author-note" style="margin-bottom:20px;">
+    <span class="author-note-label">The Brief</span>
+    Write for a CFO who has already heard the AI pitch. Skip the hype. Focus on the two things that actually cost companies money — tail spend and contract leakage — and explain what AI actually does about them. Plain English, no jargon, no vendor promises.
   </div>
 
   <div class="wp-cover">
-    <div class="wp-badge">Whitepaper <span class="wp-badge-tag">Fictional Sample</span></div>
+    <div class="wp-badge">Whitepaper</div>
     <h1>How AI Software Helps Companies <em>Spend Less</em> and Earn More</h1>
     <p class="wp-cover-desc">A practical guide to AI-driven cost optimisation for business leaders. What the technology actually does, where it delivers real results, and what companies get wrong when they adopt it.</p>
     <div class="wp-meta">
@@ -1375,7 +1554,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   <div class="wp-toc">
     <div class="wp-toc-title">Table of Contents</div>
     <ol>
-      <li>Introduction: The Problem with Spending Without Visibility</li>
+      <li>The Problem with Spending Without Visibility</li>
       <li>What AI Cost Optimisation Actually Means</li>
       <li>Where Companies Waste the Most Money</li>
       <li>How AI Finds and Fixes Waste</li>
@@ -1387,28 +1566,24 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 01</div>
-    <h2>Introduction: The Problem with Spending Without Visibility</h2>
-    <p>Most companies do not have a spending problem. They have a visibility problem.</p>
-    <p>The money going out is accounted for. Invoices paid, budgets approved, quarterly reports filed on time. But knowing where money went is not the same as knowing whether it should have gone there.</p>
-    <p>That gap between what a company spends and what it actually needs to spend is almost never visible until it is too late to do anything about it.</p>
-    <p>By the time a finance team spots an issue, the decisions that caused it are months old. The overpaid vendor contract renewed automatically. The duplicate payment sat undetected across two systems. The software licences nobody uses kept getting charged. None of it dramatic on its own. All of it adding up quietly, department by department, quarter by quarter.</p>
-    <p>This is the problem AI is genuinely good at solving. Not because it is smarter than a finance team, but because it does not get tired, does not miss patterns buried in 200,000 rows of data, and does not need to be asked twice to check the same thing again next month.</p>
-    <p>This paper is about how that works in practice. Not the pitch version. The real version. What the tools actually do, where they deliver, and what gets in the way when companies try to implement them.</p>
+    <h2>The Problem with Spending Without Visibility</h2>
+    <p>Most CFOs already know where the money is going. The problem is they only find out after it has gone.</p>
+    <p>Invoices get paid. Budgets get approved. Reports get filed. But none of that tells you whether the spend was justified. That gap between what a company spends and what it actually needed to spend rarely surfaces until the damage is already done.</p>
+    <p>By the time a finance team flags a problem, the decisions behind it are months old. The vendor contract renewed on autopilot. The duplicate invoice cleared without anyone noticing. The software licences kept billing for seats nobody opened. Each one manageable on its own. Together, they compound quietly until someone finally pulls the data.</p>
+    <p>AI is genuinely useful here. It will check 200,000 rows for the same pattern on month twelve with the same attention as month one. No prompting required.</p>
+    <p>This paper covers how that works in practice. What the tools actually do, where they reliably deliver, and what tends to go wrong when companies try to implement them.</p>
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 02</div>
     <h2>What AI Cost Optimisation Actually Means</h2>
     <p>The phrase gets used in a lot of ways, usually by people trying to sell something. So here is a plain version.</p>
     <p><span class="inline-label key-point">Key Point</span><strong>AI cost optimisation:</strong> using machine learning and data analysis to find where money is being spent poorly, and to help make better decisions about it. Not one product. Not one department. A category of tools that applies differently depending on what part of the business you are looking at.</p>
     <p><span class="inline-label important">Important</span>What it is not: a way to cut headcount, call it efficiency, and move on. That approach gets short-term results and longer-term resentment. The companies that see real improvement use AI to make smarter decisions — not to avoid making decisions altogether.</p>
-    <div class="callout"><span class="callout-lbl">Key distinction</span>Cost-cutting removes resources. Cost optimisation finds where resources are being used poorly and puts them to better use. One shrinks a business. The other makes it sharper.</div>
-    <p>The tools range from spend analytics platforms to contract intelligence software to AI-assisted procurement systems and dynamic pricing engines. Each one looks at a different slice of the spending picture. Used together, they give companies a level of financial control that was genuinely not possible ten years ago.</p>
+    <div class="callout"><span class="callout-lbl">Distinction</span>Cost-cutting removes resources. Cost optimisation finds where resources are being used poorly and puts them to better use. One shrinks a business. The other makes it sharper.</div>
+    <p>The tools range from spend analytics platforms to contract intelligence software to AI-assisted procurement systems and dynamic pricing engines. Each covers a different slice of the spending picture. Before the post-2023 AI boom made these capabilities widely accessible, this level of financial visibility required a dedicated data science team and a budget most companies did not have.</p>
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 03</div>
     <h2>Where Companies Waste the Most Money</h2>
     <p>Before looking at how AI helps, it is worth being honest about where the money actually goes. The same patterns show up across industries and company sizes.</p>
     <ul class="wp-list">
@@ -1429,10 +1604,9 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 04</div>
     <h2>How AI Finds and Fixes Waste</h2>
-    <p>The mechanism is not magic. AI can process large volumes of data fast, match patterns against known waste signatures, flag what looks wrong, and surface recommendations. The reason it works is scale.</p>
-    <p>A finance team can review hundreds of invoices a week. An AI system can review hundreds of thousands, without getting bored, without missing the third duplicate of the same invoice, without needing a break.</p>
+    <p>The reason AI works for this is scale, not intelligence. A finance team can review hundreds of invoices a week. An AI system works through hundreds of thousands at the same pace on day one as on day three hundred. It does not get bored of looking for the same duplicate. It does not need a break before the quarterly audit.</p>
+    <p>The output is not decisions. It is visibility and recommendations. Someone still has to act on what the system flags. But that person now has a list instead of a haystack.</p>
     <h3>Spend analysis</h3>
     <p>AI pulls data from across the business and puts it in one place. For the first time, a company can see the full picture of where money is going. Most finance teams have never had this view. Just having it tends to surface obvious savings before any further analysis is done.</p>
     <h3>Contract intelligence</h3>
@@ -1445,9 +1619,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 05</div>
     <h2>Real-World Applications Across Industries</h2>
-    <p>The same tools land differently depending on the industry. Here is where cost optimisation AI shows up in practice, and what it is actually doing in each context.</p>
+    <p>The core logic is the same across industries: find waste, flag it, recommend action. What changes is where the waste hides.</p>
     <ul class="wp-list">
       <li><strong>Retail and e-commerce:</strong> dynamic pricing tools adjust product prices based on demand, competitor activity, and inventory levels. Procurement AI identifies where consolidated purchasing can reduce unit costs.</li>
       <li><strong>Healthcare:</strong> supply chain AI reduces waste from expired medical inventory, identifies savings in procurement contracts, and flags billing irregularities in large hospital systems where manual review is not feasible.</li>
@@ -1463,9 +1636,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 06</div>
     <h2>What Changes When AI Handles Procurement and Pricing</h2>
-    <p>Two areas change the most when AI is properly implemented: procurement and pricing. Both involve high-volume, time-pressured decisions made repeatedly. Both are areas where getting it slightly more right, consistently, produces results that compound over time.</p>
+    <p>Procurement and pricing are where AI tends to have the most direct commercial impact. They share a common trait: high-volume decisions made under time pressure, where being slightly more accurate — consistently — adds up to something significant over a year.</p>
     <h3>Procurement</h3>
     <p>Traditional procurement is slow by design. Every stage requires manual effort from people who are already stretched. AI handles the analytical parts faster and more accurately, so the people doing the work can focus on the parts that actually require judgement.</p>
     <p><strong>Supplier benchmarking:</strong> AI shows what a company is paying compared to what similar companies pay for the same goods or services. Most procurement teams negotiate on feel and history. AI gives them a number. That number changes the conversation.</p>
@@ -1477,9 +1649,8 @@ details[open].faq-details .faq-summary::after { content: '×'; }
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 07</div>
     <h2>What Companies Get Wrong During Implementation</h2>
-    <p>Most AI cost optimisation projects do not fail because the technology does not work. They fail in the months before anyone opens the software.</p>
+    <p>The technology rarely fails. The project does. And it usually goes wrong before anyone opens the software for the first time.</p>
     <ul class="wp-list">
       <li><strong>Starting with bad data:</strong> AI is only as good as the data it runs on. Companies that feed inconsistent, incomplete, or poorly structured data into an AI system get unreliable outputs. Cleaning and organising data before implementation is not optional. It is the work that determines whether everything else succeeds.</li>
       <li><strong>Treating it as an IT project:</strong> AI cost optimisation affects finance, procurement, operations, and sales. When it is owned by IT and delivered without involvement from the business functions it is meant to serve, adoption is low and results are limited.</li>
@@ -1487,11 +1658,10 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <li><strong>Skipping change management:</strong> people whose jobs involve the decisions AI is now assisting will react to that change. Without clear communication about what the tool does and how it affects their work, resistance builds and adoption stalls.</li>
       <li><strong>Over-automating too early:</strong> moving too fast from AI recommendations to full automation, before the system has been validated, creates risk. The most successful implementations automate gradually, starting with low-stakes decisions and expanding as confidence in the system grows.</li>
     </ul>
-    <div class="callout"><span class="callout-lbl">Common pattern</span>Companies that spend time on data quality and stakeholder alignment before going live get better results. Not marginally better. Significantly better. The preparation is not a delay. It is the work. Treating it as a box to tick is how projects end up being quietly shut down six months later.</div>
+    <div class="callout"><span class="callout-lbl">Common pattern</span>Companies have spent six figures on AI procurement tools only to discover their data was so inconsistent the system could not tell a bulk order of office chairs from a capital equipment purchase. The preparation is not a delay. It is the work. Treating it as a box to tick is how projects end up being quietly shut down six months later.</div>
   </div>
 
   <div class="wp-section">
-    <div class="wp-section-num">Section 08</div>
     <h2>Where to Start</h2>
     <p>The companies that struggle with this tend to start too big. They want to optimise everything at once and end up making slow progress on all of it. Start with one area where the problem is visible and the data is already there.</p>
     <ul class="wp-list">
@@ -1502,7 +1672,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
       <li><strong>Review and adjust regularly:</strong> AI systems improve with feedback. Build in regular review points where the outputs are assessed, corrections are made, and new opportunities are identified.</li>
     </ul>
     <p>There is no universal starting point. The right one depends on company size, industry, data quality, and where the biggest inefficiencies actually sit.</p>
-    <p>What is consistent across every successful implementation is the framing: this is a business change that uses technology, not a technology project that happens to affect the business. The ones that get that right tend to stick with it. The ones that do not tend to produce a case study nobody wants to share.</p>
+    <p>What separates the implementations that stick from the ones that get quietly shelved is usually framing. The companies that treat this as a business change — one that happens to use technology — tend to get results. The ones that hand it to IT and wait for a report tend to get a very expensive lesson about data quality.</p>
   </div>
 
   <div class="wp-conclusion">
@@ -1510,7 +1680,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
     <p>AI cost optimisation is not new. The tools have been around long enough to have a track record — which means there is real data on what works and what does not, not just vendor promises.</p>
     <p>What has changed is access. Capabilities that used to require a dedicated data science team and a seven-figure technology budget are now available through SaaS platforms that mid-sized businesses can afford and deploy.</p>
     <p>The companies that move on this build an advantage that is hard to close later. Not because AI is a shortcut, but because financial visibility compounds. Every month of cleaner data, better contracts, and smarter pricing decisions makes the next month easier.</p>
-    <p>The waste is already there. AI just makes it visible.</p>
+    <p>The waste is already there. But if your data is a mess, AI will just help you lose money faster and with more confidence. Fix the data first.</p>
   </div>
 
 </div>
@@ -1524,15 +1694,14 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 
   <div class="sec-header">
     <div class="sec-label">B2B Newsletter</div>
-    <div class="sec-title">Partner Newsletter</div>
-    <p class="sec-desc">A full-length partner newsletter covering AI's impact on sales performance in 2025. All figures are illustrative.</p>
+    <div class="sec-title">Partner Newsletter
+    <p class="sec-desc">A B2B partner update covering AI's impact on sales in 2025. Written for affiliates and operators. Figures are illustrative.</p></div>
   </div>
 
   <div class="nl-wrap">
     <div class="nl-header">
-      <div class="nl-brand" style="color:var(--blue)">Partner &amp; Affiliate Update · January 2026 · Issue 12 <span class="tag tag-spec" style="margin-left:8px">Fictional Sample</span></div>
       <div class="nl-subject">How Artificial Intelligence Shaped Our Sales in 2025</div>
-      <div class="nl-meta-row"><span class="tag tag-b2b">B2B</span><span class="tag tag-plain">Partners &amp; Affiliates</span><span class="read-time">~ 7 min read</span></div>
+      <div class="nl-meta-row"><span class="tag tag-spec">Spec Work</span><span class="read-time">~ 7 min read</span></div>
     </div>
     <div class="nl-body">
       <p>Dear partners,</p>
@@ -1544,7 +1713,7 @@ details[open].faq-details .faq-summary::after { content: '×'; }
         <div class="b2b-stat"><div class="b2b-stat-num purple">-22%</div><div class="b2b-stat-label">Cost per acquisition vs 2024</div></div>
       </div>
 
-      <p>All figures above are from our internal 2025 annual review. Full breakdown available on request. <a href="#" style="color:var(--blue)">Contact your account manager</a> or <a href="#" style="color:var(--blue)">reach out to our partnerships team</a>.</p>
+      <p>All figures above are from our internal 2025 annual review. Full breakdown available on request. <span style="color:var(--blue)">Contact your account manager</span> or <span style="color:var(--blue)">reach out to our partnerships team</span>.</p>
 
       <div class="nl-divider"></div>
       <h3>Where AI Made the Biggest Difference</h3>
@@ -1608,9 +1777,10 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 <div class="container">
 
   <div class="sec-header">
-    <div class="sec-label">Case Study <span class="tag tag-spec" style="margin-left:6px">Fictional</span></div>
-    <div class="sec-title">How Aero Nordic Recovered €14M in Lost Revenue With AI Pricing</div>
-    <p class="sec-desc">A fictional case study in the style of a travel technology content piece. All companies, figures, and outcomes are illustrative.</p>
+    <div class="sec-label">Case Study</div>
+    <div style="margin:4px 0 8px"><span class="tag tag-spec">Spec Work</span></div>
+    <div class="sec-title">How Aero Nordic
+    <p class="sec-desc">Fictional case study in the style of a travel tech content piece. All companies and outcomes are made up, the writing style is the point.</p> Recovered €14M in Lost Revenue With AI Pricing</div>
   </div>
 
   <div class="b2b-stats" style="margin-bottom:32px">
@@ -1668,6 +1838,10 @@ details[open].faq-details .faq-summary::after { content: '×'; }
 </div>
 
 
+
+<!-- ════════════════════════════════════
+     PAGE: GUIDES
+════════════════════════════════════ -->
 <!-- ═══════ FOOTER ═══════ -->
 <div class="site-footer-wrap">
   <div class="site-footer">
